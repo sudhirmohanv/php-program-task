@@ -1,0 +1,8 @@
+<script>
+function exp(x,y)
+{
+res=x**y
+return res
+
+}
+</script>

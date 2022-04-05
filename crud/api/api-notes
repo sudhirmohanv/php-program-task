@@ -1,0 +1,255 @@
+what is Api:-
+*****************
+Api stands ofr Appliction programming interface 
+Api is a mechanism by using which one type Appliction can communicate whith Another
+Appliction.
+In general api is very big topic 
+
+Api are used by defferent Appliction to data from one platefrom to another platefrom
+worldmeter .com corona virus Api
+any Appliction A,B,C,D,E,F,G can utilise the Api of worldmeter.com to get live update of corona.
+
+1..interoperability : conversion of one type of language to soeme common language so that data con be exchange without derectly 
+conerting the one language to another language
+
+Interoperability refers to shoarig of data from one Appliction to Another Appliction
+without changeing native language ,by means of some common Intercoversion language
+or 
+sharing of data from one App to another App without derectly coverting native language is called interoperability.
+
+
+for Eg:
+Android --->json--->java
+python --->json--->java
+python --->json--->php
+php --->json--->SQL
+
+maain feature of interoperability is platefrom indepent native.
+
+php-->(serialisation/json Encoding )-->json ---(Deseriasation/json Decode)->SQL
+serialisation/json Encoding : converting one type PL. to JSON object
+Deseriasation/json Decode : converting JSON type to one type data-type of PL
+
+EG:
+php---> json_decde() ---->json (serialiation)
+Associativ Array  ----> json 
+
+json ---> json_decode() ---> Associativ Array. (De-serialiation) 
+
+what is web-service.:-any type of service over the internet  is termed as web-service,  it can be any type
+of service and can use any protocol.
+
+
+what is web-Api.:-
+the Api which can be accessed only via web interface internet as a medium  is called
+as web-Api
+java Appliction ---->orecal local DB
+
+		localDriver Api
+game Appliction ------>Sound drever
+			Audio Api
+
+Every web-api is Api not every Api is web-Api
+
+what is soap.:--
+it is type of web-Api which can used be used, to transport data/represent the data ,in fromSimpaleobject Access protocal which used 
+XML DAta representation.
+
+Eg:
+<XML:nmps="version/XML-document-4">
+		<xml:Envelope>
+		       <Employee>
+					<user id="1">
+								<email><sudhir@gmail.com</email>
+								<passwrod>1234</passwrod>
+						</user>
+					</Employee>	
+				</Envelope>
+</xml>
+used for very heavy data transmission.
+Soap is highly Scalable
+Soap is secure, why because you access nth node for access real node 
+Soap Architecture can very very deep that it can be very complex to handle
+				
+
+what is REST.:-
+
+REST:stands for reperetational state transfer,
+it is type of web-api which work under http protocol.
+its representation is always in json fromat
+it will very very light weight,
+Easy to handle due to oreganised data stuctire in  from of key and value paire
+
+Request : GET
+Request : POST
+Request : options
+Request : PATCH
+Request : PUT
+Request : DELETE
+Request : LOCK
+Request : HEAD
+...
+
+...
+
+...
+
+{
+"type":"GET",
+"version":"1.0.1",
+"status":"true",
+"error":"false",
+"code":200,
+"data":[
+
+			{"empid":1001,"name":"sudhir","salary":10000},
+			{"empid":1002,"name":"vipin","salary":70000},
+			{"empid":1003,"name":"mohan","salary":40000},
+			{"empid":1004,"name":"Reetesh","salary":20000},
+			{"empid":1005,"name":"Akash","salary":50000},
+
+
+]
+"keyword",[],
+}
+
+
+what is postman.:-
+what is postman is a client tool send the pure http request to the server.
+and testing Api's.
+postman has set of http method to intersepct the REST API,by using GET,POST ,PIT,PATCH,DELETE...
+and also ha different payloads which can be binded as header, and body content.
+
+
+what is defference B/w REST & SOAP.:=>
+***********************************
+1.rest : Respresntational state transfer
+1.soap : simple object Access protocal
+
+
+2.Rest : uses lower bandwith
+2.Soap : uses Higher Bandwith
+
+3.Rest : its follows web-standards related http protocal
+3.Soap : its follows XML structure and conventions.based on Envelope and web standards.
+
+4. REST : lower security
+4.soap : Higher security
+
+5.Rest : Easy to handle, easy to deserialise and serialise
+5.Soap : very difficult to handle,
+
+6. Rest : data representation is  in json,yml
+6. soap : data representation is  in XML
+
+Api Related terms:-
+**********************
+=>1. http method : these are set of method which are defined to perform some
+unique operation
+in rest Api 
+http methds are reqivalent DB operation
+
+C : create the data HTTP/1.1 POST
+R : read the data HTTP/1.1 GET 
+U : update the data HTTP/1.1 PUT AND PATCH
+			PUT : full update
+			PATCH : partial update
+D : Delete the data HTTP/1.1 DELETE
+
+HTTP has two version 1.1 and 2.1
+headers :- are the type of payload (infometion) attached to request before data .
+		headers con contain infometion like ,http satus : 200, or 404, 500
+		header has content Information like content-type :text/html content-type:
+		appliction/json ,content-type:Image:jpeg all these are called MIME type
+		header has allowed methds : GET,POST,....
+		header con be used to check if request are Authenitic or not
+		header con be used to enable core policy (cotent origin request security policy)
+ 
+Body Content :- it refers to form data , supplied from ,or any client like postman 
+				type of body data
+				1.formdata : form
+				2.urlencoded : data
+				3.www-encoded data
+				4.raw data : json
+				
+				
+How to Api:-
+***********
+Array
+(
+    [DOCUMENT_ROOT] => C:\laragon\www\app-2021\crud\api
+    [REMOTE_ADDR] => ::1
+    [REMOTE_PORT] => 55198
+    [SERVER_SOFTWARE] => PHP 7.4.19 Development Server
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_NAME] => localhost
+    [SERVER_PORT] => 7000
+    [REQUEST_URI] => /api.php
+    [REQUEST_METHOD] => GET
+    [SCRIPT_NAME] => /api.php
+    [SCRIPT_FILENAME] => C:\laragon\www\app-2021\crud\api\api.php
+    [PHP_SELF] => /api.php
+    [HTTP_HOST] => localhost:7000
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_SEC_CH_UA] => " Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"
+    [HTTP_SEC_CH_UA_MOBILE] => ?0
+    [HTTP_SEC_CH_UA_PLATFORM] => "Windows"
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+    [HTTP_SEC_FETCH_SITE] => none
+    [HTTP_SEC_FETCH_MODE] => navigate
+    [HTTP_SEC_FETCH_USER] => ?1
+    [HTTP_SEC_FETCH_DEST] => document
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+    [REQUEST_TIME_FLOAT] => 1644036878.2556
+    [REQUEST_TIME] => 1644036878
+)
+
+				
+	****	full form  *****
+2. jwt: json web token
+3. why is by default expiry time of jwt ? 20 minute
+4. what is use tiken ?
+		for Authentication purpose.
+ 
+ 
+ 
+ 1. method spoofing :
+
+form : method --> get | post
+postman : request --> formdata --> get or post
+form  : get,post
+put 1. Raw data 
+Delete 1 : Raw data
+
+Get : formdata ,raw data
+post : formdat , raw data
+
+put => data raw ---> Request: PUT
+delete => data raw ---> Raw Request : DELETE
+
+formdata = PUT => method : post and _method = PUT => data :formdata
+
+2. JWT:- Json web token
+3. why is by default expiry time of jwt ? 20 Minute.
+4. What is use Token ?
+    for Authentication Purpose.
+
+
+    
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
